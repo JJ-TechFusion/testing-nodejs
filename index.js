@@ -7,8 +7,8 @@ app.get('/', (req, res) => {
 });
 
 
-app.get('/about', (req, res) => {
-  res.send('About');
+app.get('/about-us', (req, res) => {
+  res.send('About Us');
 });
 
 app.get('/contact-us', (req, res) => {
