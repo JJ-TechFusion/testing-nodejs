@@ -31,6 +31,10 @@ app.get('/blog/:id', (req, res) => {
   res.send(`Blog ${req.params.id}`);
 });
 
+app.get('/blog/:id/comments', (req, res) => {
+  res.send(`Comments for blog ${req.params.id}`);
+});
+
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
