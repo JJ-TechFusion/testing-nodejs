@@ -19,6 +19,10 @@ app.get('/products', (req, res) => {
   res.send('Products');
 });
 
+app.get('/services', (req, res) => {
+  res.send('Services');
+});
+
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
