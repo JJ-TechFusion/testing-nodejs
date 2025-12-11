@@ -23,6 +23,14 @@ app.get('/services', (req, res) => {
   res.send('Services');
 });
 
+app.get('/blog', (req, res) => {
+  res.send('Blog');
+});
+
+app.get('/blog/:id', (req, res) => {
+  res.send(`Blog ${req.params.id}`);
+});
+
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
